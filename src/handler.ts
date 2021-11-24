@@ -31,7 +31,6 @@ export async function handleRequest(request: Request): Promise<Response> {
 }
 
 const getUrlFromKV = async (key: string, values: ResponseObject, pageDetails: ResponseObject[]): Promise<void> => {
-  // @ts-ignore
   let response = await DEVTWO.get(key) as string | null;
   if (response === null) {
     pageDetails.push(values);
