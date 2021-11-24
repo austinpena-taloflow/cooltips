@@ -1,0 +1,6 @@
+node_modules/
+dist/
+wrangler.toml
+package-lock.json
+.idea/
+idea/
